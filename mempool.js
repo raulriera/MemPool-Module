@@ -2,6 +2,11 @@
 
 MemPool Module for Appcelerator Titanium
 
+About:
+Created by Raul Riera, http://raulriera.com
+
+Code taken from https://github.com/pec1985/Single-Context and modified
+
 */
 
 (function(){
@@ -82,11 +87,11 @@ MemPool Module for Appcelerator Titanium
 				var mb = kb / 1024;
 				
 				if (mb > 1) {
-					mem = Math.round(mb) + " mb";
+					mem = mb.toFixed(2) + " mb";
 				} else if (kb > 1) {
-					mem = Math.round(kb) + " kb";
+					mem = kb.toFixed(2) + " kb";
 				} else {
-					mem = Math.round(mem) + " bytes";
+					mem = mem.toFixed(2) + " bytes";
 				}
 				return mem;
 			};
