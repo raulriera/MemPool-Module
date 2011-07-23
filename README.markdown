@@ -20,5 +20,5 @@ Created by Raul Riera, http://raulriera.com
 
 The code is a modified version of
 
-https://github.com/pec1985/Single-Context
+https://github.com/pec1985/Single-Context  
 http://developer.appcelerator.com/question/116867/this-is-a-solution-to-your-memory-woes
