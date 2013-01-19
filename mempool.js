@@ -80,6 +80,10 @@ Code taken from https://github.com/pec1985/Single-Context and modified
 		
 			// Converts the memory from bytes to kilobytes or megabytes
 			var parseMemory = function(mem){
+				if(Ti.Platform.osname == 'iphone' || Ti.Platform.osname == 'ipad') {
+					//on iOS, memory is already defined in MBs
+					return mem.toFixed(2) + " mb"; 
+				}
 				
 				// bytes to kilobytes
 				var kb = mem / 1024;
